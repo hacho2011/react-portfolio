@@ -1,7 +1,12 @@
 import React from "react";
-import { HeaderComponent } from "./styles";
+import {
+  StyledHeaderComponent,
+  StyledNavComponent,
+  StyledFooterComponent,
+} from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import logo from "../../assets/logo.png";
 import {
   faHome,
   faUser,
@@ -12,28 +17,43 @@ import {
 
 function Header() {
   return (
-    <HeaderComponent>
-      <div className="logo">LOGO</div>
-      <nav>
+    <StyledHeaderComponent>
+      <div className="logo">
+        <img src={logo} />
+      </div>
+      <StyledNavComponent>
         <ul>
-          <li>
-            <FontAwesomeIcon icon={faHome} size="lg" />
+          <li className="">
+            <a href="#">
+              <FontAwesomeIcon icon={faHome} size="lg" />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faUser} size="lg" />
+            <a href="#">
+              <FontAwesomeIcon icon={faUser} size="lg" />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faGraduationCap} size="lg" />
+            <a href="#">
+              <FontAwesomeIcon icon={faGraduationCap} size="lg" />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faLayerGroup} size="lg" />
+            <a href="#">
+              <FontAwesomeIcon icon={faLayerGroup} size="lg" />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faComments} size="lg" />
+            <a href="#">
+              <FontAwesomeIcon icon={faComments} size="lg" />
+            </a>
           </li>
         </ul>
-      </nav>
-    </HeaderComponent>
+      </StyledNavComponent>
+      <StyledFooterComponent>
+        <span className="copyright">©2022 Dev Dhjung Portfolio.</span>
+      </StyledFooterComponent>
+    </StyledHeaderComponent>
   );
 }
 

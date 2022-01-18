@@ -8,7 +8,8 @@
       "@/pages/*": ["src/pages/*"],
       "@/parts/*": ["src/parts/*"],
       "@/styles/*": ["src/styles/*"],
-      "@/utils/*": ["src/utils/*"]
+      "@/utils/*": ["src/utils/*"],
+      "@/mockup/*": ["src/mockup/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

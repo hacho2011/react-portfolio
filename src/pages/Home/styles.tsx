@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Main = styled.main`
-  width: 100%;
+  width: calc(100% - 100px);
   height: 100vh;
-  background-color: aqua;
+  margin-left: 100px;
 `;
 
 export const Intro = styled.div``;

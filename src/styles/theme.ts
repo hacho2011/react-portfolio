@@ -6,11 +6,16 @@ const colors = {
   grey: "#f0f0f0",
   grey02: "#C8C8C8",
   darkGray: "#4F4F4F",
-  yellow: "#EFB661",
-  primary: "#002F6C",
+  orange: "#ffa114",
+  yellow: "#ecc371",
+  primary: "#6667ab",
   txt_disabled_gray: "#BCBFDA",
   white: "#fff",
   whiteGray: "#f5f5f5",
+  mint: "#20d8a1",
+  olive: "#85a1ac",
+  bg_color: "#f9f9ff",
+  pink: "#e9435f",
 };
 
 const fontFamily = `'Noto Sans KR', -apple-system,
@@ -23,6 +28,8 @@ const fontSizes = {
   size14: "1.4rem",
   size15: "1.5rem",
   size16: "1.6rem",
+  size18: "1.8rem",
+  size20: "2rem",
   size30: "3rem",
 };
 

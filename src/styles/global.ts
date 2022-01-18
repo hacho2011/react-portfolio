@@ -10,6 +10,10 @@ export const globalStyles = (props: CustomThemeType) => css`
     box-sizing: border-box;
   }
 
+  body {
+    background: ${props.colors.bg_color};
+  }
+
   html,
   body,
   div,
