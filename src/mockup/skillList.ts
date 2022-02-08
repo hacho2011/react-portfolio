@@ -1,61 +1,81 @@
-import { stack } from "@/interfaces/stack";
+import { skill } from "@/interfaces/skill";
 
-export const stacks: stack[] = [
+export const skills: skill[] = [
   {
     title: "HTML",
     img: "html.png",
     img_color: "html_color.png",
+    level: "😀",
+    type: 1,
   },
   {
     title: "CSS",
     img: "css.png",
     img_color: "css_color.png",
+    level: "😀",
+    type: 1,
   },
   {
     title: "JS",
     img: "js.png",
     img_color: "js_color.png",
+    level: "🙂",
+    type: 1,
   },
   {
     title: "TS",
     img: "ts.png",
     img_color: "ts_color.png",
+    level: "🤔",
+    type: 1,
   },
   {
     title: "Vue",
     img: "vue.png",
     img_color: "vue_color.png",
+    level: "🙂",
+    type: 1,
   },
   {
     title: "React",
     img: "react.png",
     img_color: "react_color.png",
-  },
-  {
-    title: "Node",
-    img: "node.png",
-    img_color: "node_color.png",
+    level: "🙂",
+    type: 1,
   },
   {
     title: "Sass",
     img: "sass.png",
     img_color: "sass_color.png",
+    level: "🤔",
+    type: 1,
   },
   {
-    title: "Firebase",
-    img: "firebase.png",
-    img_color: "firebase_color.png",
-    level: 1,
+    title: "Node",
+    img: "node.png",
+    img_color: "node_color.png",
+    level: "🙂",
+    type: 2,
   },
   {
     title: "MySQL",
     img: "mysql.png",
     img_color: "mysql_color.png",
+    level: "🙂",
+    type: 2,
   },
   {
     title: "AWS",
     img: "aws.png",
     img_color: "aws_color.png",
-    level: 1,
+    level: "🤔",
+    type: 3,
+  },
+  {
+    title: "Firebase",
+    img: "firebase.png",
+    img_color: "firebase_color.png",
+    level: "🤔",
+    type: 3,
   },
 ];

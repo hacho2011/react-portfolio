@@ -4,7 +4,7 @@ import {
   StyledContactContainer,
   StyledContactIntroComponent,
   StyledContactInputContainer,
-  StyledInputComponent
+  StyledInputComponent,
 } from "./styles";
 
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -13,18 +13,7 @@ function Header() {
   return (
     <StyledContactSection>
       <h1>CONTACT ME</h1>
-      <StyledContactContainer>
-        <StyledContactIntroComponent>
-          <h2>
-            
-          </h2>
-        </StyledContactIntroComponent>
-        <StyledContactInputContainer>
-          <StyledInputComponent>
-
-          </StyledInputComponent>
-        </StyledContactInputContainer>
-      </StyledContactContainer>
+      <StyledContactContainer></StyledContactContainer>
     </StyledContactSection>
   );
 }

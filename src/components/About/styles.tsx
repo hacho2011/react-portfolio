@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const StyledAboutSection = styled.section`
   width: 100%;
-  height: 600px;
   padding: 80px 50px 100px;
   display: flex;
   flex-direction: column;
@@ -19,69 +18,87 @@ export const StyledAboutMeContainer = styled.article`
   width: 90%;
   height: auto;
   background: white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .image-box {
+    width: 200px;
+    height: 200px;
+    background: grey;
+    margin-right: 40px;
+    border-radius: 100%;
+  }
 
   .introduction {
     line-height: 30px;
+
+    .information {
+      margin: 10px 0 20px;
+      a {
+        text-decoration: none;
+        color: ${(props) => props.theme.colors.darkGray};
+
+        svg {
+          margin-right: 5px;
+        }
+
+        span {
+          margin-right: 10px;
+        }
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .resume {
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: ${(props) => props.theme.fontSizes.size16};
+      color: ${(props) => props.theme.colors.white};
+      background: ${(props) => props.theme.colors.primary};
+      cursor: pointer;
+      vertical-align: top;
+
+      svg {
+        margin-left: 5px;
+        position: relative;
+      }
+    }
+
+    .resume:hover {
+      opacity: 0.9;
+      svg {
+        animation: bounce 1s ease infinite;
+        animation-duration: ;
+      }
+    }
   }
-`;
 
-export const StyledStackContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const StyledStackComponent = styled.div`
-  display: inline-flex;
-  flex-direction: column;
-
-  .stack-box {
-    width: 150px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 100px;
+  @keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    20% {
+      top: -4px;
+    }
+    40% {
+      top: 4px;
+    }
+    60% {
+      top: 0px;
     }
 
-    .grayscale-img {
-      display: block;
+    80% {
+      top: 0px;
     }
 
-    .color-img {
-      display: none;
-    }
-  }
-
-  .stack-name {
-    padding: 5px 10px;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 20px;
-    background: ${(props) => props.theme.colors.orange};
-    opacity: 0;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  &:hover {
-    .stack-name {
-      opacity: 1;
-    }
-
-    .grayscale-img {
-      display: none;
-    }
-
-    .color-img {
-      display: block;
+    100% {
+      top: 0px;
     }
   }
 `;

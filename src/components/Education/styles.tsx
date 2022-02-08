@@ -14,3 +14,13 @@ export const StyledEducationSection = styled.section`
     font-weight: bold;
   }
 `;
+
+export const StyledEducationContainer = styled.article``;
+
+export const StyledButtonBox = styled.div`
+  display: flex;
+
+  button {
+    padding: ;
+  }
+`;
